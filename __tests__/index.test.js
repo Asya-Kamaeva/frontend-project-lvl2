@@ -1,3 +1,4 @@
+import { test, expect } from '@jest/globals';
 import genDiff from '../src/index.js';
 import getFixturePath from '../src/getFixturePath.js';
 
@@ -13,18 +14,16 @@ const result = [
   '-  proxy: 123.234.53.22',
   '-  timeout: 50',
   '+  timeout: 20',
-  '+  verbose: true'
+  '+  verbose: true',
 ];
 const fullResult = result.join('\n');
 
 test('result is string', () => {
-  expect(typeof(resultAbsolutePath)).toEqual('string');
+  expect(typeof resultAbsolutePath).toEqual('string');
 });
-
 test('result with absolute path is correct', () => {
   expect(resultAbsolutePath).toEqual(fullResult);
 });
-
 test('result with relative path is correct', () => {
   expect(resultRelativePath).toEqual(fullResult);
 });

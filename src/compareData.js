@@ -17,4 +17,3 @@ const compareData = (obj1, obj2) => {
   return result.join('\n');
 };
 export default compareData;
-

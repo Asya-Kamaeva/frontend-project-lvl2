@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Asya-Kamaeva/frontend-project-lvl2#readme",
   "dependencies": {
     "@babel/core": "^7.17.9",
+    "@jest/globals": "^27.5.1",
     "babel-jest": "^27.5.1",
     "commander": "^9.1.0",
     "eslint": "^8.13.0",
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
+    "@types/jest": "^27.4.1",
     "eslint-plugin-jest": "^26.1.4",
     "jest": "^27.5.1"
   }

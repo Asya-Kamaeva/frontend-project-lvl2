@@ -8,3 +8,6 @@
 
 Example of 3rd step
 [![asciicast](https://asciinema.org/a/vOEoCREH1RX6NOwodlz3VA8ff.svg)](https://asciinema.org/a/vOEoCREH1RX6NOwodlz3VA8ff)
+
+Example of 5th step
+[![asciicast](https://asciinema.org/a/2t7rKMAK23r9sQUDmd9x88dkd.svg)](https://asciinema.org/a/2t7rKMAK23r9sQUDmd9x88dkd)

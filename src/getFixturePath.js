@@ -1,8 +1,6 @@
-import { fileURLToPath } from 'url';
 import path from 'path';
+import fs from 'fs';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const getFixturePath = (nameOfFile) => path.join(__dirname, '..', '__fixtures__', nameOfFile);
+const getFixturePath = (file) => fs.readFileSync(path.resolve(process.cwd(), '__fixtures__', file), 'utf-8');
 
 export default getFixturePath;

@@ -1,12 +1,17 @@
 name: jest
-
 on: push
-
-env:
-  CI: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: make test
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm install
+        run: make install
+        env:
+          CI: true
+      - name: run jest
+        run: make test

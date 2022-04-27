@@ -14,3 +14,6 @@ Example of 5th step
 
 Example of 6th step
 [![asciicast](https://asciinema.org/a/Gil30JWZGNtGe36Kk0jFNUYj1.svg)](https://asciinema.org/a/Gil30JWZGNtGe36Kk0jFNUYj1)
+
+Example of 7th step
+[![asciicast](https://asciinema.org/a/21IexDUvswoBuCHE0M8PxRcJp.svg)](https://asciinema.org/a/21IexDUvswoBuCHE0M8PxRcJp)

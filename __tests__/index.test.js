@@ -4,6 +4,7 @@ import getFixturePath from '../src/getFixturePath.js';
 
 const stylishResult = getFixturePath('stylishResult.txt');
 const plainResult = getFixturePath('plainResult.txt');
+const jsonResult = getFixturePath('jsonResult.txt');
 
 test('result is string', () => {
   expect(typeof genDiff('file1.json', 'file2.json', 'stylish')).toEqual('string');
@@ -26,4 +27,14 @@ test('plain yaml-yml', () => {
 });
 test('plain yaml-json', () => {
   expect(genDiff('file1.yaml', 'file2.json', 'plain')).toEqual(plainResult);
+});
+
+test('json json-json', () => {
+  expect(genDiff('file1.json', 'file2.json', 'json')).toEqual(jsonResult);
+});
+test('json yaml-yml', () => {
+  expect(genDiff('file1.yaml', 'file2.yml', 'json')).toEqual(jsonResult);
+});
+test('json yaml-json', () => {
+  expect(genDiff('file1.yaml', 'file2.json', 'json')).toEqual(jsonResult);
 });

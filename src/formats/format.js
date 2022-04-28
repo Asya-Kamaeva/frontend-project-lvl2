@@ -1,13 +1,17 @@
 import stylish from './stylish.js';
 import plain from './plain.js';
+import json from './json.js';
 
 const format = (tree, nameOfFormat) => {
-  if (nameOfFormat === 'stylish') {
-    return stylish(tree);
+  switch (nameOfFormat) {
+    case 'stylish':
+      return stylish(tree);
+    case 'plain':
+      return plain(tree);
+    case 'json':
+      return json(tree);
+    default:
+      return 'Error';
   }
-  if (nameOfFormat === 'plain') {
-    return plain(tree);
-  }
-  return tree;
 };
 export default format;

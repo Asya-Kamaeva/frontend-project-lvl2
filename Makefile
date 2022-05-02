@@ -12,3 +12,6 @@ lint:
 
 test:
 	npx jest
+
+test-coverage:
+	npx test -- --coverage

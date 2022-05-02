@@ -9,11 +9,11 @@ This repository contains gendiff function. It compares two configuration files a
 
 ## Setup: ##
 1. Clone repo
-  git clone git@github.com:Asya-Kamaeva/frontend-project-lvl2.git
+  - git clone git@github.com:Asya-Kamaeva/frontend-project-lvl2.git
 2. Install dependenses
-  make install
+  - make install
 3. Link the package
-  make link
+  - make link
 
 ## Example of using: ##
 

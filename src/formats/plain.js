@@ -36,7 +36,6 @@ const plain = (obj) => {
     return node;
   };
   const result = obj.map((item) => iter(item));
-
   return `\n${result.join('\n')}`;
 };
 export default plain;

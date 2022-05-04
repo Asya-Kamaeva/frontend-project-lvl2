@@ -9,7 +9,7 @@ const chooseParser = (data, extension) => {
     case 'yaml':
       return yaml.load(data);
     default:
-      'Error';
+      return 'Error';
   }
 };
 export default chooseParser;

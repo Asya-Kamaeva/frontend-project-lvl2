@@ -1,6 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 
-const getFixturePath = (file) => fs.readFileSync(path.resolve(process.cwd(), '__fixtures__', file), 'utf-8');
+const getFixturePath = (file) => path.resolve(process.cwd(), '__fixtures__', file);
+const readFile = (file) => fs.readFileSync(getFixturePath(file), 'utf-8');
 
-export default getFixturePath;
+export { getFixturePath, readFile };

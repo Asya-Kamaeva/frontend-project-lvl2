@@ -24,13 +24,13 @@ const stylish = (obj) => {
       value2,
       children,
     } = node;
-    let objectResult;
     const result1 = `${genIndent(num)}- ${key}: ${makeString(value1, num)}`;
     const result2 = `${genIndent(num)}+ ${key}: ${makeString(value2, num)}`;
     switch (type) {
-      case 'object':
-        objectResult = children.flatMap((child) => iter(child, num + 1));
+      case 'object': {
+        const objectResult = children.flatMap((child) => iter(child, num + 1));
         return `${genIndent(num)}  ${key}: {\n${objectResult.join('\n')}\n${genIndent(num)}  }`;
+      }
       case 'delet':
         return `${genIndent(num)}- ${key}: ${makeString(value, num)}`;
       case 'add':

@@ -17,11 +17,11 @@ const plain = (obj) => {
       value2,
       children,
     } = node;
-    let objectResult;
     switch (type) {
-      case 'object':
-        objectResult = children.flatMap((child) => iter(child, `${parent}${key}.`));
+      case 'object': {
+        const objectResult = children.flatMap((child) => iter(child, `${parent}${key}.`));
         return objectResult.join('\n');
+      }
       case 'delet':
         return `Property '${parent}${key}' was removed`;
       case 'add':

@@ -31,7 +31,7 @@ const stylish = (obj) => {
         const objectResult = children.flatMap((child) => iter(child, num + 1));
         return `${genIndent(num)}  ${key}: {\n${objectResult.join('\n')}\n${genIndent(num)}  }`;
       }
-      case 'delet':
+      case 'delete':
         return `${genIndent(num)}- ${key}: ${makeString(value, num)}`;
       case 'add':
         return `${genIndent(num)}+ ${key}: ${makeString(value, num)}`;

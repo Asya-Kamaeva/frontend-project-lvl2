@@ -22,7 +22,7 @@ const plain = (obj) => {
         const objectResult = children.flatMap((child) => iter(child, `${parent}${key}.`));
         return objectResult.join('\n');
       }
-      case 'delet':
+      case 'delete':
         return `Property '${parent}${key}' was removed`;
       case 'add':
         return `Property '${parent}${key}' was added with value: ${toDoString(value)}`;

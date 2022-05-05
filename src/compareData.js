@@ -16,7 +16,7 @@ const compareData = (obj1, obj2) => {
     }
     if (!_.has(obj2, key)) {
       return {
-        type: 'delet',
+        type: 'delete',
         key,
         value: value1,
       };
